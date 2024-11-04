@@ -1,0 +1,110 @@
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 20px;
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background: #fff;
+}
+
+.hide{
+  display: none;
+}
+
+h1,
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-top: 30px;
+}
+
+#posts {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.blog-post {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post h3 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  color: #2a9d8f;
+}
+
+.blog-post p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 0.9rem;
+  background-color: #e76f51;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #d9534f;
+}
+
+button + button {
+  background-color: #2a9d8f;
+}
+
+button + button:hover {
+  background-color: #21867a;
+}
+
+textarea,
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  font-size: 1rem;
+}
+
+textarea {
+  height: 100px;
+  resize: none;
+}
+
+form {
+  margin-top: 20px;
+}
+
+button[type="submit"] {
+  background-color: #264653;
+  width: 100%;
+}
+
+button[type="submit"]:hover {
+  background-color: #1d3c4a;
+}

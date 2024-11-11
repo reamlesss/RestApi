@@ -15,9 +15,9 @@ app.use(express.static(path.join(__dirname, "public")));
 const JWT_SECRET = "0Wg11ndyhI+WpHVYSCT6jxrcC2OPabIcMf/4A8Ip7ug="; // Make this secure in production
 
 const db = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "trapovejgulas",
+  host: "websitedb.cpo226aaml1h.eu-central-1.rds.amazonaws.com",
+  user: "admin",
+  password: "matejvojtisek",
   database: "blog_db",
 });
 
@@ -142,7 +142,8 @@ app.patch("/blog/:id", verifyToken, (req, res) => {
     res.send({ message: "Post updated" });
   });
 });
-
 // Start the server
-app.listen(3001, () => {
-  console.log("Website and API are running on http
+app.listen(3000, "0.0.0.0", () => {
+  // const serverIP = getServerIP();
+  console.log(`Server running on http://3.75.231.223:3000/`);
+});
